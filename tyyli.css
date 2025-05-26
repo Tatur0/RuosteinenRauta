@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #086BA8;
+    --secondary-color: #0096F5;
+    --highlights-color: #AD4900; 
+    --highlights-hover-color: #8F2B00;
+    --text-color: #054065;
+    --neutral-color: #FAFAFA;
+    font-family: "Barlow", sans-serif;
+}
+
+h1, h2, h3, h4, .hero {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+.hero {
+    font-size: 56px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+
+p, a {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+p {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--highlights-color);
+    text-decoration: none;
+}
+
+/*
+main {
+    background-image: url("assets/img/referenssi2.webp");
+    background-repeat: no-repeat;
+}
+*/
+
+/* hover nuoli */
+.btn span:after {
+    content: "🢒";
+    margin-left: 0.5em;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--highlights-color);
+    color: var(--neutral-color);
+    border: 2px solid var(--highlights-color);
+    padding-left: 2em;
+    padding-right: 2em; 
+}
+
+.btn-primary:hover {
+    background-color: var(--highlights-hover-color);
+    color: var(--neutral-color);
+    border-color: var(--highlights-hover-color);    
+}
+
+.btn-secondary {
+    background-color: var(--neutral-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding-left: 2em;
+    padding-right: 2em; 
+}
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    border-color: var(--primary-color);    
+}
+
+.palvelut > .card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.palvelut > .card:hover {
+    transform: scale(1.05);
+    transition: 250ms;
+}
+
+.yhteystiedot {
+    color: var(--highlights-color);
+}
+
+.footer-logo {
+    object-fit: contain;
+    width: 100%;
+    max-width: 20rem;
+}
+
+.video {
+    height: 50%;
+    width: 100%;
+    filter: blur(2px);
+}
+
+.kuva2 {
+    object-fit: cover;
+    border-radius: 4%;
+}
+
+body {
+    background-color: var(--neutral-color);
+}
+
+.carousel-info {
+    box-shadow: -2px -2px 12px 12px rgba(0,0,0,0.26);
+    -webkit-box-shadow: -2px -2px 12px 12px rgba(0,0,0,0.26);
+    -moz-box-shadow: -2px -2px 12px 12px rgba(0,0,0,0.26);
+
+    box-shadow: -2px -2px 0px 200px rgba(0,0,0,0.26) inset;
+-webkit-box-shadow: -2px -2px 0px 200px rgba(0,0,0,0.26) inset;
+-moz-box-shadow: -2px -2px 0px 200px rgba(0,0,0,0.26) inset;
+}

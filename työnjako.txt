@@ -1,0 +1,2 @@
+Tatu: palvelu kortit, header, footer, meista & historia, karuselli
+Asko: login.php, tyylit style_guide perusteella, navbar
