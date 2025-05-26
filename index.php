@@ -33,6 +33,7 @@
 
     <main>
         
+        <!-- Chromium autoplayaa vain mutetetut videot -->
         <video class="video" autoplay muted loop>
             <source type="video/mp4" src="assets/video/background-video.mp4">
             Your browser does not support the video tag.

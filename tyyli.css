@@ -128,11 +128,9 @@ body {
 }
 
 .carousel-info {
-    box-shadow: -2px -2px 12px 12px rgba(0,0,0,0.26);
-    -webkit-box-shadow: -2px -2px 12px 12px rgba(0,0,0,0.26);
-    -moz-box-shadow: -2px -2px 12px 12px rgba(0,0,0,0.26);
-
     box-shadow: -2px -2px 0px 200px rgba(0,0,0,0.26) inset;
--webkit-box-shadow: -2px -2px 0px 200px rgba(0,0,0,0.26) inset;
--moz-box-shadow: -2px -2px 0px 200px rgba(0,0,0,0.26) inset;
+    -webkit-box-shadow: -2px -2px 0px 200px rgba(0,0,0,0.26) inset;
+    -moz-box-shadow: -2px -2px 0px 200px rgba(0,0,0,0.26) inset;
+
+    border: 1px black solid;
 }
