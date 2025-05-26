@@ -33,7 +33,7 @@
 
     <main>
         
-        <video class="video" autoplay loop>
+        <video class="video" autoplay muted loop>
             <source type="video/mp4" src="assets/video/background-video.mp4">
             Your browser does not support the video tag.
         </video>
