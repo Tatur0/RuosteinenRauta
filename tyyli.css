@@ -3,24 +3,34 @@
 :root {
     --primary-color: #086BA8;
     --secondary-color: #0096F5;
-    --highlights-color: #AD4900; 
+    --highlights-color: #AD4900;
     --highlights-hover-color: #8F2B00;
     --text-color: #054065;
     --neutral-color: #FAFAFA;
     font-family: "Barlow", sans-serif;
 }
 
-h1, h2, h3, h4, .hero {
+h1,
+h2,
+h3,
+h4,
+.hero {
     color: var(--primary-color) !important;
     font-weight: bold;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-transform: uppercase;
 }
 
 .hero {
-    font-size: 56px;
+    /*font-size: 56px; ei ole responsiivinen*/
+    font-size: 3.75vw;
+}
+
+.gradient {
+    background-color: rgba(0, 0, 0, 0.12)
 }
 
 h1 {
@@ -30,14 +40,17 @@ h1 {
 h2 {
     font-size: 24px;
 }
+
 h3 {
     font-size: 18px;
 }
+
 h4 {
     font-size: 16px;
 }
 
-p, a {
+p,
+a {
     font-size: 16px;
     line-height: 1.4;
 }
@@ -51,32 +64,32 @@ a {
     text-decoration: none;
 }
 
-/*
-main {
-    background-image: url("assets/img/referenssi2.webp");
-    background-repeat: no-repeat;
-}
-*/
-
-/* hover nuoli */
+/* hover nuoli ja animaatio */
 .btn span:after {
-    content: "🢒";
-    margin-left: 0.5em;
-    transition: transform 0.3s ease;
+    content: " >";
+    position: absolute;
+    font-weight: bold;
+    transition: 0.5s;
+    opacity: 0;
 }
 
+.btn:hover span:after {
+    opacity: 1;
+}
+
+/* button tyylit, värivaihdot */
 .btn-primary {
     background-color: var(--highlights-color);
     color: var(--neutral-color);
     border: 2px solid var(--highlights-color);
     padding-left: 2em;
-    padding-right: 2em; 
+    padding-right: 2em;
 }
 
 .btn-primary:hover {
     background-color: var(--highlights-hover-color);
     color: var(--neutral-color);
-    border-color: var(--highlights-hover-color);    
+    border-color: var(--highlights-hover-color);
 }
 
 .btn-secondary {
@@ -84,22 +97,28 @@ main {
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
     padding-left: 2em;
-    padding-right: 2em; 
+    padding-right: 2em;
 }
+
 .btn-secondary:hover {
     background-color: var(--primary-color);
     color: var(--neutral-color);
-    border-color: var(--primary-color);    
+    border-color: var(--primary-color);
 }
 
-.palvelut > .card {
+.palvelut>.card {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-.palvelut > .card:hover {
+.palvelut>.card:hover {
     transform: scale(1.05);
     transition: 250ms;
+}
+
+.referenssi>.card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .yhteystiedot {
@@ -115,7 +134,6 @@ main {
 .video {
     height: 50%;
     width: 100%;
-    filter: blur(2px);
 }
 
 .kuva2 {
@@ -128,9 +146,30 @@ body {
 }
 
 .carousel-info {
-    box-shadow: -2px -2px 0px 200px rgba(0,0,0,0.26) inset;
-    -webkit-box-shadow: -2px -2px 0px 200px rgba(0,0,0,0.26) inset;
-    -moz-box-shadow: -2px -2px 0px 200px rgba(0,0,0,0.26) inset;
+    box-shadow: -2px -2px 0px 200px rgba(0, 0, 0, 0.26) inset;
+    -webkit-box-shadow: -2px -2px 0px 200px rgba(0, 0, 0, 0.26) inset;
+    -moz-box-shadow: -2px -2px 0px 200px rgba(0, 0, 0, 0.26) inset;
 
     border: 1px black solid;
+}
+
+.navbar-brand {
+    max-width: 15rem;
+}
+
+.collapsing {
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+    -webkit-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.navbar-toggler.collapsed {
+
+    .navbar-toggler-icon {
+        transition-duration: 0.35s;
+        transform: rotate(90deg);
+    }
 }

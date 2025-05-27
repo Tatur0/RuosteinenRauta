@@ -1,2 +1,4 @@
-Tatu: palvelu kortit, header, footer, meista & historia, karuselli
-Asko: login.php, tyylit style_guide perusteella, navbar
+Tatu: palvelu cardit, footer, meistä & historia, karusellit, referenssit, collapset cardeihin
+Asko: login.php, tyylit style_guide perusteella, navbar, painikkeiden animaatiot, footerin järjestys-homma*
+
+*mobiililaitteella on yhteydenottolomake ensimmäinen, tietokoneella toinen (oikealla)
