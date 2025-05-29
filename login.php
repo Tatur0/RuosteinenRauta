@@ -42,7 +42,7 @@
             session_start();
             $_SESSION['kirjautunut'] = true;
             $_SESSION['kayttaja'] = 'admin';
-            echo 'Tervetuloa' . $_SESSION["kayttaja"];
+            header('Location: index.php');
         } else {
             echo "Virheellinen käyttäjätunnus tai salasana";
         }

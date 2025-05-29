@@ -32,7 +32,7 @@ session_start();
                     <li class="nav-item"><a class="nav-link" href="yhteydenotto.php">Ota Yhteyttä</a></li>
                     <?php 
                     if ($_SESSION['kirjautunut'] ?? false) {
-                        echo '<li class="nav-item">Moi $_SESSION["kayttaja"]</li>';
+                        echo '<li class="nav-item"><p class="nav-link">Moi ' . $_SESSION["kayttaja"] . '!</p></li>';
                     } else {
                         echo '<li class="nav-item"><a class="btn btn-secondary" href="login.php"><span>Kirjaudu</span></a></li>';
                     }                    

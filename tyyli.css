@@ -55,7 +55,8 @@ a {
     line-height: 1.4;
 }
 
-p {
+p,
+p.nav-link {
     color: var(--text-color);
 }
 
